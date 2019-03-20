@@ -10,11 +10,56 @@ import UIKit
 
 class LoginViewController: UIViewController {
 
+    
+    
+    @IBOutlet weak var emailAddress: UITextField!
+    
+    @IBOutlet weak var password: UITextField!
+    
+    
+    @IBOutlet weak var switchrember: UISwitch!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        
+     // let userdefault = UserDefaults.standard
+        
+    
+        
         // Do any additional setup after loading the view, typically from a nib.
     }
 
 
+    @IBAction func btnlogin(_ sender: UIButton)
+    {
+        let userdefault = UserDefaults.standard
+        
+        let email = emailAddress.text
+        let pass = password.text
+        
+        if(email == "admin" && pass == "123")
+        {
+            
+            if(switchrember.isOn)
+            {
+                userdefault.set(email, forKey: "useremail")
+                 userdefault.set(pass, forKey: "userpass")
+            }
+            else
+            {
+                userdefault.removeObject(forKey: "useremail")
+                userdefault.removeObject(forKey: "userpass")
+                
+            }
+            
+            
+           /* let sb = UIStoryboard(name: "Main", bundle: nil)
+           let next = sb.instantiateViewController(withIdentifier: "StudentEntry") as! StudentEntryViewController
+          
+            self.navigationController?.pushViewController(next, animated: true)*/
+        }
+        
+    }
 }
 

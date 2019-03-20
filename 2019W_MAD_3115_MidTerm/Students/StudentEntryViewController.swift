@@ -8,7 +8,7 @@
 
 import UIKit
 
-class StudentEntryViewController: UIViewController {
+class StudentEntryViewController: UITableViewController{
 
     override func viewDidLoad() {
         super.viewDidLoad()
