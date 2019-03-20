@@ -33,13 +33,13 @@ class LoginViewController: UIViewController {
 
     @IBAction func btnlogin(_ sender: UIButton)
     {
-        let userdefault = UserDefaults.standard
-        
         let email = emailAddress.text
         let pass = password.text
-        
+
         if(email == "admin" && pass == "123")
         {
+            let userdefault = UserDefaults.standard
+            
             
             if(switchrember.isOn)
             {
