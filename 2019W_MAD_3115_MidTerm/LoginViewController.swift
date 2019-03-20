@@ -54,10 +54,22 @@ class LoginViewController: UIViewController {
             }
             
             
-           /* let sb = UIStoryboard(name: "Main", bundle: nil)
+          let sb = UIStoryboard(name: "Main", bundle: nil)
            let next = sb.instantiateViewController(withIdentifier: "StudentEntry") as! StudentEntryViewController
           
-            self.navigationController?.pushViewController(next, animated: true)*/
+            self.navigationController?.pushViewController(next, animated: true)
+        }
+        
+        
+        else
+        {
+         
+            let alert = UIAlertController(title: "Invalid", message: "Invalid Email and Password", preferredStyle: .alert)
+            
+            let addOk = UIAlertAction(title: "OK", style: .default, handler: nil)
+            
+            alert.addAction(addOk)
+            
         }
         
     }
