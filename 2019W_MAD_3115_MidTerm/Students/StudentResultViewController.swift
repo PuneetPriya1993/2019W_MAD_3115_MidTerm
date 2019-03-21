@@ -8,15 +8,42 @@
 
 import UIKit
 
-class StudentResultViewController: UIViewController {
+class StudentResultViewController:  UIViewController {
 
+/*
+    @IBOutlet weak var sid: UILabel!
+    
+    @IBOutlet weak var sName: UILabel!
+    
+    
+    @IBOutlet weak var gender: UILabel!
+    
+    
+    @IBOutlet weak var course: UILabel!
+    
+    
+    @IBOutlet weak var eMail: UILabel!
+    
+    
+    @IBOutlet weak var birthDay: UILabel!
+    */
+    
+   // @IBOutlet weak var resullt: UILabel!
+    
     override func viewDidLoad() {
-        super.viewDidLoad()
+       super.viewDidLoad()
 
+       
+        
+        
         // Do any additional setup after loading the view.
     }
     
 
+    
+    
+    
+    
     /*
     // MARK: - Navigation
 

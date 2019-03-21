@@ -11,5 +11,11 @@ import Foundation
 
 struct Student
 {
-    
+    var studentId: String
+    var studentName: String
+    var gender: String
+    var courseName: String
+    var emailAddress: String
+    var birthDate: String
+    var totalMarks: Double
 }
